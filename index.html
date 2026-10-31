@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Encurtidos y Conservas Caseras LATAM · 170 recetas</title>
+    <meta name="description" content="170 recetas de encurtidos y conservas caseras con foto y paso a paso. PDF para imprimir o consultar en el celular." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Fira+Sans+Condensed:ital,wght@0,600;0,700;1,700&display=swap"
+    />
+    <style>
+      :root {
+        --green: #4d561c;
+        --green-dark: #3c4316;
+        --navy: #671d1a;
+        --gold: #806329;
+        --paper: #faf6ed;
+        --sand: #f0e7d8;
+        --border: #dfd2bd;
+        --text: #39352f;
+        --card: #fffefa;
+        --cta: #087b43;
+        --cta-dark: #066535;
+        --shadow: 0 6px 22px rgba(92, 70, 35, 0.1);
+        --cond: "Fira Sans Condensed", "Arial Narrow", sans-serif;
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body { margin: 0; font-family: "Fira Sans", system-ui, sans-serif; font-size: 17px; line-height: 1.55; color: var(--text); background: var(--paper); -webkit-font-smoothing: antialiased; }
+      img { max-width: 100%; display: block; }
+      .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+      .sec { padding: 64px 0; }
+      .sand { background: var(--sand); }
+      h1, h2, h3 { font-family: var(--cond); font-weight: 700; text-transform: uppercase; line-height: 1.05; margin: 0 0 16px; color: var(--green-dark); letter-spacing: 0.005em; }
+      h1 { font-size: clamp(34px, 8vw, 54px); }
+      h2 { font-size: clamp(30px, 6.5vw, 44px); }
+      h3 { font-size: 21px; }
+      h1 em, h2 em, .accent { font-style: italic; color: var(--gold); }
+      .center { text-align: center; }
+      .eyebrow { display: inline-flex; align-items: center; gap: 10px; font-family: var(--cond); font-weight: 600; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin: 0 0 14px; }
+      .eyebrow::before { content: ""; width: 28px; height: 1px; background: var(--gold); }
+      .center .eyebrow::after { content: ""; width: 28px; height: 1px; background: var(--gold); }
+      .lead { font-size: 19px; margin: 0 0 24px; }
+      .sub { max-width: 640px; margin: 0 auto 32px; }
+      .btn { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 60px; padding: 16px 24px; border-radius: 12px; background: var(--cta); color: #fff; font-family: var(--cond); font-weight: 700; font-size: 20px; letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none; text-align: center; box-shadow: 0 6px 16px rgba(8, 123, 67, 0.28), inset 0 -3px 0 rgba(0, 0, 0, 0.15); transition: transform 0.15s, background 0.15s; }
+      .btn:hover { background: var(--cta-dark); transform: translateY(-1px); }
+      .btn:focus-visible, summary:focus-visible, .page-card:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+      @media (min-width: 769px) { .btn { width: auto; min-width: 380px; margin: 0 auto; display: inline-flex; } .btn-row { text-align: center; } }
+      .btn-row { margin-top: 32px; }
+      .checks { list-style: none; padding: 0; margin: 0 0 28px; display: grid; gap: 12px; }
+      .checks li { position: relative; padding-left: 36px; }
+      .checks li::before { content: "✓"; position: absolute; left: 0; top: 1px; width: 24px; height: 24px; border-radius: 50%; background: var(--green); color: #fff; font-size: 14px; font-weight: 700; display: grid; place-items: center; }
+      .card { background: var(--card); border: 1px solid var(--border); border-radius: 18px; box-shadow: var(--shadow); }
+
+      /* hero */
+      .hero { padding: 36px 0 56px; }
+      .hero__grid { display: grid; gap: 28px; align-items: center; }
+      .hero__media { position: relative; }
+      .hero__media img { border-radius: 20px; border: 1px solid var(--border); box-shadow: var(--shadow); width: 100%; }
+      .badge { position: absolute; right: -6px; top: -14px; width: 96px; height: 96px; border-radius: 50%; background: var(--navy); color: var(--paper); display: grid; place-items: center; text-align: center; font-family: var(--cond); font-weight: 700; line-height: 1; font-size: 13px; letter-spacing: 0.06em; box-shadow: 0 0 0 4px var(--paper), 0 0 0 5px var(--gold), var(--shadow); transform: rotate(8deg); }
+      .badge b { display: block; font-size: 34px; }
+      @media (min-width: 900px) { .hero__grid { grid-template-columns: 1.05fr 1fr; gap: 48px; } .hero__media { order: 2; } .hero .btn { margin: 0; } }
+
+      /* para quien */
+      .split { display: grid; gap: 32px; align-items: center; }
+      .split img { border-radius: 20px; border: 1px solid var(--border); box-shadow: var(--shadow); }
+      @media (min-width: 900px) { .split { grid-template-columns: 1fr 1.1fr; gap: 56px; } }
+
+      /* carousel */
+      .carousel { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 8px 20px 24px; margin: 0 -20px; -webkit-overflow-scrolling: touch; scrollbar-width: thin; }
+      .page-card { flex: 0 0 78%; max-width: 300px; scroll-snap-align: center; cursor: zoom-in; background: #fbf7ec; border: 1px solid var(--border); border-radius: 10px; box-shadow: 0 10px 26px rgba(92, 70, 35, 0.16); overflow: hidden; display: flex; flex-direction: column; text-align: left; padding: 0; font: inherit; color: inherit; }
+      .page-card__band { background: var(--green); color: var(--paper); padding: 10px 14px; font-family: var(--cond); font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; display: flex; justify-content: space-between; }
+      .page-card__body { padding: 14px 16px 16px; display: flex; flex-direction: column; flex: 1; }
+      .page-card h3 { font-size: 22px; margin: 0 0 10px; }
+      .page-card img { aspect-ratio: 4 / 3; object-fit: cover; width: 100%; border-radius: 6px; margin-bottom: 12px; }
+      .page-card__lbl { font-family: var(--cond); font-weight: 700; font-size: 13px; letter-spacing: 0.12em; color: var(--gold); text-transform: uppercase; margin: 0 0 6px; border-bottom: 1px solid var(--border); padding-bottom: 4px; }
+      .page-card ul { margin: 0 0 12px; padding-left: 18px; font-size: 14px; line-height: 1.45; }
+      .page-card__tag { margin-top: auto; align-self: flex-end; font-size: 12px; color: var(--gold); border: 1px solid var(--border); border-radius: 99px; padding: 2px 10px; }
+      .hint { text-align: center; font-size: 14px; color: var(--gold); margin: 0; }
+      @media (min-width: 900px) { .carousel { justify-content: center; margin: 0; padding: 8px 0 24px; } .page-card { flex: 0 0 23%; } }
+      .lightbox { position: fixed; inset: 0; background: rgba(30, 20, 15, 0.85); display: none; align-items: center; justify-content: center; padding: 20px; z-index: 100; }
+      .lightbox.open { display: flex; }
+      .lightbox .page-card { flex: none; width: 100%; max-width: 440px; max-height: 92vh; overflow: auto; cursor: default; }
+      .lightbox__close { position: absolute; top: 14px; right: 14px; width: 48px; height: 48px; border-radius: 50%; border: 0; background: var(--paper); color: var(--text); font-size: 26px; cursor: pointer; }
+
+      /* recipes grid */
+      .recipes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+      @media (min-width: 900px) { .recipes { grid-template-columns: repeat(4, 1fr); gap: 20px; } }
+      .recipe { overflow: hidden; display: flex; flex-direction: column; }
+      .recipe img, .recipe__tile { aspect-ratio: 1 / 1; width: 100%; object-fit: cover; }
+      .recipe__tile { background-color: var(--green); background-image: radial-gradient(circle at 20% 20%, rgba(250, 246, 237, 0.12) 0 18%, transparent 19%), radial-gradient(circle at 85% 80%, rgba(250, 246, 237, 0.1) 0 22%, transparent 23%); display: grid; place-items: center; padding: 14px; text-align: center; }
+      .recipe__tile span { border: 1px solid rgba(250, 246, 237, 0.5); border-radius: 10px; padding: 14px 10px; color: var(--paper); font-family: var(--cond); font-weight: 700; text-transform: uppercase; font-size: 18px; line-height: 1.1; width: 100%; }
+      .recipe__tile span::before { content: "✧"; display: block; color: #d9bf86; font-size: 20px; margin-bottom: 6px; }
+      .recipe__tile--b { background-color: var(--navy); }
+      .recipe__tile--c { background-color: var(--gold); }
+      .recipe__txt { padding: 12px 14px 16px; }
+      .recipe h3 { font-size: 17px; margin: 0 0 4px; }
+      .recipe p { margin: 0; font-size: 14px; }
+      .tagline { font-family: var(--cond); font-weight: 700; text-transform: uppercase; font-size: clamp(22px, 4.6vw, 30px); line-height: 1.15; color: var(--green-dark); max-width: 720px; margin: 40px auto 0; }
+
+      /* steps */
+      .steps { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; counter-reset: s; }
+      @media (min-width: 769px) { .steps { grid-template-columns: repeat(2, 1fr); gap: 18px; } }
+      @media (min-width: 1000px) { .steps { grid-template-columns: repeat(3, 1fr); } }
+      .steps li { padding: 20px; display: flex; gap: 16px; align-items: flex-start; }
+      .steps li::before { counter-increment: s; content: counter(s); flex: none; width: 46px; height: 46px; border-radius: 50%; background: var(--green); color: var(--paper); font-family: var(--cond); font-weight: 700; font-size: 22px; display: grid; place-items: center; }
+      .steps h3 { font-size: 19px; margin: 4px 0 6px; }
+      .steps p { margin: 0; font-size: 15px; }
+
+      /* bonus */
+      .dark { background: var(--navy); color: var(--paper); }
+      .dark h2 { color: var(--paper); }
+      .dark h2 em { color: #d9bf86; }
+      .dark .eyebrow { color: #d9bf86; }
+      .dark .eyebrow::before, .dark .eyebrow::after { background: #d9bf86; }
+      .bonuses { display: grid; gap: 16px; }
+      @media (min-width: 769px) { .bonuses { grid-template-columns: repeat(2, 1fr); } }
+      @media (min-width: 1000px) { .bonuses { grid-template-columns: repeat(3, 1fr); } }
+      .bonus { background: #7a2a26; color: var(--paper); border: 1px solid #94504b; border-radius: 18px; padding: 20px; display: flex; gap: 18px; }
+      .bonus__num { font-family: var(--cond); font-weight: 700; letter-spacing: 0.14em; font-size: 13px; color: #d9bf86; margin: 0 0 4px; }
+      .bonus h3 { color: var(--paper); font-size: 21px; margin: 0 0 8px; }
+      .bonus p { margin: 0 0 10px; font-size: 15px; opacity: 0.92; }
+      .bonus__tag { display: inline-block; font-size: 13px; border: 1px solid rgba(250, 246, 237, 0.35); border-radius: 99px; padding: 2px 10px; margin-bottom: 10px; }
+      .bonus__price { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; font-size: 15px; }
+      .bonus__price s { opacity: 0.75; }
+      .free { background: var(--cta); color: #fff; font-family: var(--cond); font-weight: 700; font-size: 13px; letter-spacing: 0.06em; border-radius: 6px; padding: 3px 8px; }
+      .cover { flex: none; width: 84px; height: 116px; border-radius: 3px 8px 8px 3px; padding: 10px 8px; display: flex; flex-direction: column; justify-content: space-between; font-family: var(--cond); font-weight: 700; text-transform: uppercase; font-size: 12px; line-height: 1.05; box-shadow: inset 5px 0 0 rgba(0, 0, 0, 0.18), 3px 5px 12px rgba(0, 0, 0, 0.3); }
+      .cover small { font-size: 12px; letter-spacing: 0.12em; opacity: 0.85; }
+      .cover::after { content: "✧"; font-size: 14px; }
+      .cover--1 { background: var(--green); color: var(--paper); border-top: 4px solid #d9bf86; }
+      .cover--2 { background: var(--paper); color: var(--navy); border: 1px solid var(--border); border-top: 4px solid var(--navy); }
+      .cover--3 { background: var(--gold); color: var(--paper); border-top: 4px solid var(--green-dark); }
+      .cover--4 { background: var(--paper); color: var(--green-dark); border: 1px solid var(--border); border-top: 4px solid var(--green); }
+      .cover--5 { background: var(--green-dark); color: #f3e6c8; border-top: 4px solid var(--navy); }
+      .cover-row { display: flex; justify-content: center; gap: 8px; margin: 18px 0 22px; flex-wrap: wrap; }
+      .cover-row .cover { width: 76px; height: 100px; font-size: 12px; padding: 8px 6px; overflow-wrap: anywhere; }
+      .cover-row .cover small, .cover-row .cover::after { display: none; }
+
+      /* author */
+      .author { max-width: 760px; margin: 0 auto; text-align: center; padding: 32px 22px; }
+      .avatar { width: 128px; height: 128px; border-radius: 50%; margin: 0 auto 22px; background: var(--sand); border: 3px solid var(--gold); display: grid; place-items: center; font-family: var(--cond); font-weight: 700; font-size: 40px; color: var(--green); }
+      .author__sub { font-weight: 500; color: var(--gold); font-style: italic; margin: 0 0 16px; }
+      .pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 22px; }
+      .pills span { background: var(--sand); border: 1px solid var(--border); border-radius: 99px; padding: 6px 14px; font-size: 14px; font-weight: 500; color: var(--green-dark); }
+
+      /* offer */
+      .offer { position: relative; max-width: 520px; margin: 24px auto 0; padding: 40px 22px 28px; border: 2px solid var(--green); }
+      .ribbon { position: absolute; top: -16px; left: 50%; transform: translateX(-50%); background: var(--navy); color: var(--paper); font-family: var(--cond); font-weight: 700; letter-spacing: 0.12em; font-size: 14px; padding: 7px 18px; border-radius: 99px; white-space: nowrap; }
+      .offer__img { width: 78%; margin: 0 auto; border-radius: 12px; }
+      .offer .checks { gap: 10px; font-size: 16px; }
+      .offer .checks li.b::before { background: var(--gold); }
+      .value { text-align: center; font-size: 17px; margin: 0; }
+      .price { text-align: center; margin: 4px 0 20px; }
+      .price__from { margin: 0; font-size: 16px; }
+      .price__big { display: block; font-family: var(--cond); font-weight: 700; font-size: 76px; line-height: 1; color: var(--cta); margin: 4px 0; }
+      .price__once { font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; font-size: 13px; color: var(--gold); }
+      .offer .btn { width: 100%; min-width: 0; display: flex; }
+      .trust { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 18px 0 10px; text-align: center; font-size: 13px; line-height: 1.3; }
+      .trust span::before { display: block; font-size: 22px; margin-bottom: 4px; color: var(--green); }
+      .trust .t1::before { content: "🛡"; }
+      .trust .t2::before { content: "💳"; }
+      .trust .t3::before { content: "✉"; }
+      .secure { text-align: center; font-size: 13px; color: #6b6458; margin: 0; }
+
+      /* guarantee */
+      .seal { width: 150px; height: 150px; margin: 0 auto 24px; border-radius: 50%; background: repeating-conic-gradient(var(--gold) 0 6deg, #a5864a 6deg 12deg); display: grid; place-items: center; box-shadow: var(--shadow); }
+      .seal div { width: 118px; height: 118px; border-radius: 50%; background: var(--paper); border: 2px solid var(--gold); display: grid; place-items: center; text-align: center; font-family: var(--cond); font-weight: 700; color: var(--green-dark); line-height: 1; font-size: 15px; letter-spacing: 0.08em; }
+      .seal b { display: block; font-size: 46px; letter-spacing: 0; }
+      .mini { display: grid; gap: 14px; max-width: 760px; margin: 32px auto 0; }
+      @media (min-width: 769px) { .mini { grid-template-columns: 1fr 1fr; } }
+      .mini .card { padding: 20px; text-align: left; }
+      .mini h3 { font-size: 19px; margin: 0 0 6px; }
+      .mini p { margin: 0; font-size: 15px; }
+
+      /* faq */
+      .faq { max-width: 760px; margin: 0 auto; display: grid; gap: 12px; }
+      .faq details { background: var(--card); border: 1px solid var(--border); border-radius: 14px; box-shadow: var(--shadow); }
+      .faq summary { cursor: pointer; list-style: none; padding: 18px 52px 18px 20px; font-weight: 700; position: relative; min-height: 44px; }
+      .faq summary::-webkit-details-marker { display: none; }
+      .faq summary::after { content: "+"; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 26px; color: var(--gold); font-weight: 400; }
+      .faq details[open] summary::after { content: "–"; }
+      .faq details p { margin: 0; padding: 0 20px 18px; }
+
+      footer { background: var(--navy); color: var(--paper); text-align: center; padding: 40px 20px 110px; font-size: 14px; }
+      footer .brand { font-family: var(--cond); font-weight: 700; letter-spacing: 0.14em; font-size: 17px; margin: 0 0 8px; }
+      footer p { margin: 0 0 6px; }
+      footer .disc { opacity: 0.75; font-size: 12px; margin-top: 16px; }
+      @media (min-width: 769px) { footer { padding-bottom: 40px; } }
+
+      .sticky { position: fixed; left: 0; right: 0; bottom: 0; padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); background: rgba(250, 246, 237, 0.96); border-top: 1px solid var(--border); box-shadow: 0 -6px 20px rgba(92, 70, 35, 0.12); transform: translateY(110%); transition: transform 0.25s; z-index: 50; }
+      .sticky.show { transform: none; }
+      .sticky .btn { min-height: 52px; font-size: 18px; }
+      @media (min-width: 769px) { .sticky { display: none; } }
+      @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .sticky, .btn { transition: none; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- 1. HERO -->
+      <section class="hero" id="inicio">
+        <div class="wrap hero__grid">
+          <div class="hero__media">
+            <img src="hero-portada.webp" alt="Libro de 170 recetas de encurtidos y conservas caseras en tablet y versión impresa, sobre una mesa de cocina con frascos" fetchpriority="high" />
+            <div class="badge" aria-label="170 recetas"><span><b>170</b>RECETAS</span></div>
+          </div>
+          <div>
+            <p class="eyebrow">✧ Conservas hechas por mí</p>
+            <h1>170 recetas de encurtidos y conservas caseras <em>para hacer en casa</em></h1>
+            <p class="lead">Prepara encurtidos, verduras, chiles y otras conservas con recetas con foto y paso a paso, aunque nunca lo hayas hecho antes.</p>
+            <ul class="checks">
+              <li>Varía las botanas y acompañamientos para compartir con amigos y familia</li>
+              <li>Siente el orgullo de mirar los frascos y decir: lo hice yo.</li>
+              <li>PDF para imprimir o consultar en el celular, tablet y computadora</li>
+            </ul>
+            <a class="btn" href="#oferta">Quiero mis recetas</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. PARA QUIÉN -->
+      <section class="sec sand" id="para-quien">
+        <div class="wrap split">
+          <img src="cocina-escena.webp" alt="Mujer llenando frascos de conservas mientras lee la receta en su celular" loading="lazy" />
+          <div>
+            <h2>Este material es para <em>ti que…</em></h2>
+            <ul class="checks">
+              <li>Te gustan las conservas y quieres preparar tus propios sabores en casa</li>
+              <li>Guardas recetas, pero prefieres tener medidas y pasos reunidos en un solo lugar</li>
+              <li>Quieres ir más allá del pepinillo y descubrir combinaciones con verduras, chiles y otros ingredientes</li>
+              <li>Quieres variar los acompañamientos de la comida, los sándwiches y la mesa de botanas</li>
+              <li>Te gusta recibir amigos y familia con algo preparado por ti</li>
+              <li>Quieres explorar la posibilidad de ganar un dinero extra vendiendo conservas caseras</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. RECETAS POR DENTRO -->
+      <section class="sec" id="por-dentro">
+        <div class="wrap">
+          <div class="center">
+            <h2>Echa un vistazo a las <em>recetas por dentro</em></h2>
+            <p class="sub">Cada receta ocupa dos páginas: foto, ingredientes y utensilios en la primera; paso a paso numerado, consejos y conservación en la segunda.</p>
+          </div>
+          <div class="carousel" aria-label="Páginas de muestra del libro">
+            <div class="page-card" role="button" tabindex="0" aria-label="Ampliar página: Jalapeños en escabeche">
+              <div class="page-card__band"><span>Chiles</span><span>✧</span></div>
+              <div class="page-card__body">
+                <h3>Jalapeños en escabeche</h3>
+                <img src="receta-jalapenos.webp" alt="Frasco de jalapeños en escabeche con zanahoria y cebolla" loading="lazy" />
+                <p class="page-card__lbl">Ingredientes</p>
+                <ul>
+                  <li>400 g de chiles jalapeños</li>
+                  <li>2 zanahorias</li>
+                  <li>1 cebolla</li>
+                  <li>6 dientes de ajo</li>
+                  <li>1 1/2 tazas de vinagre blanco</li>
+                  <li>1 taza de agua</li>
+                  <li>Aceite, orégano, laurel y sal</li>
+                </ul>
+                <span class="page-card__tag">Página 1 de 2</span>
+              </div>
+            </div>
+            <div class="page-card" role="button" tabindex="0" aria-label="Ampliar página: Cebolla morada encurtida">
+              <div class="page-card__band"><span>Clásicos</span><span>✧</span></div>
+              <div class="page-card__body">
+                <h3>Cebolla morada encurtida</h3>
+                <img src="receta-cebolla.webp" alt="Cebolla morada encurtida en frasco" loading="lazy" />
+                <p class="page-card__lbl">Ingredientes</p>
+                <ul>
+                  <li>Cebolla morada</li>
+                  <li>Jugo de limón</li>
+                  <li>Vinagre</li>
+                  <li>Orégano</li>
+                  <li>Sal</li>
+                  <li>Chile habanero (opcional)</li>
+                </ul>
+                <span class="page-card__tag">Página 1 de 2</span>
+              </div>
+            </div>
+            <div class="page-card" role="button" tabindex="0" aria-label="Ampliar página: Pepinillos clásicos al eneldo">
+              <div class="page-card__band"><span>Clásicos</span><span>✧</span></div>
+              <div class="page-card__body">
+                <h3>Pepinillos clásicos al eneldo</h3>
+                <img src="receta-pepinillos.webp" alt="Pepinillos al eneldo en frasco de vidrio" loading="lazy" />
+                <p class="page-card__lbl">Ingredientes</p>
+                <ul>
+                  <li>Pepinos pequeños</li>
+                  <li>Eneldo</li>
+                  <li>Ajo</li>
+                  <li>Semillas de mostaza</li>
+                  <li>Vinagre y agua</li>
+                  <li>Sal y azúcar</li>
+                </ul>
+                <span class="page-card__tag">Página 1 de 2</span>
+              </div>
+            </div>
+            <div class="page-card" role="button" tabindex="0" aria-label="Ampliar página: Chutney de piña">
+              <div class="page-card__band"><span>Chutneys</span><span>✧</span></div>
+              <div class="page-card__body">
+                <h3>Chutney de piña</h3>
+                <img src="receta-chutney.webp" alt="Chutney de piña en frasco" loading="lazy" />
+                <p class="page-card__lbl">Ingredientes</p>
+                <ul>
+                  <li>Piña</li>
+                  <li>Cebolla</li>
+                  <li>Jengibre</li>
+                  <li>Vinagre de manzana</li>
+                  <li>Azúcar morena</li>
+                  <li>Chile</li>
+                </ul>
+                <span class="page-card__tag">Página 1 de 2</span>
+              </div>
+            </div>
+          </div>
+          <p class="hint">Desliza para ver más · Toca una página para ampliarla</p>
+        </div>
+      </section>
+
+      <!-- 4. LO QUE VAS A PREPARAR -->
+      <section class="sec sand" id="recetas">
+        <div class="wrap">
+          <div class="center">
+            <h2>Mira lo que <em>vas a preparar</em></h2>
+            <p class="sub">De los encurtidos clásicos a los sabores especiales: una muestra de las 170 recetas del libro</p>
+          </div>
+          <div class="recipes">
+            <article class="card recipe">
+              <img src="receta-jalapenos.webp" alt="" loading="lazy" />
+              <div class="recipe__txt"><h3>Jalapeños en escabeche</h3><p>Para acompañar tacos y tortas.</p></div>
+            </article>
+            <article class="card recipe">
+              <img src="receta-cebolla.webp" alt="" loading="lazy" />
+              <div class="recipe__txt"><h3>Cebolla morada encurtida</h3><p>Para cochinita, tacos y ceviches.</p></div>
+            </article>
+            <article class="card recipe">
+              <img src="receta-pepinillos.webp" alt="" loading="lazy" />
+              <div class="recipe__txt"><h3>Pepinillos clásicos al eneldo</h3><p>Para hamburguesas y sándwiches.</p></div>
+            </article>
+            <article class="card recipe">
+              <img src="receta-huevos-mixtos.webp" alt="Huevos de codorniz al ajo en frasco" loading="lazy" />
+              <div class="recipe__txt"><h3>Huevos de codorniz al ajo</h3><p>Para tablas de botanas y ensaladas.</p></div>
+            </article>
+            <article class="card recipe">
+              <img src="receta-chutney.webp" alt="" loading="lazy" />
+              <div class="recipe__txt"><h3>Chutney de piña</h3><p>Para carnes de cerdo y quesos.</p></div>
+            </article>
+            <article class="card recipe">
+              <div class="recipe__tile" aria-hidden="true"><span>Zanahorias en escabeche</span></div>
+              <div class="recipe__txt"><h3>Zanahorias en escabeche</h3><p>Para botanas y comidas.</p></div>
+            </article>
+            <article class="card recipe">
+              <div class="recipe__tile recipe__tile--b" aria-hidden="true"><span>Ají encurtido</span></div>
+              <div class="recipe__txt"><h3>Ají encurtido</h3><p>Para empanadas y carnes asadas.</p></div>
+            </article>
+            <article class="card recipe">
+              <div class="recipe__tile recipe__tile--c" aria-hidden="true"><span>Giardiniera de verduras</span></div>
+              <div class="recipe__txt"><h3>Giardiniera de verduras</h3><p>Para picadas y sándwiches.</p></div>
+            </article>
+          </div>
+          <p class="tagline center">Una pequeña muestra de las cientos de posibilidades que tendrás <span class="accent">en la palma de tu mano.</span></p>
+          <div class="btn-row"><a class="btn" href="#oferta">Quiero conocer el kit completo</a></div>
+        </div>
+      </section>
+
+      <!-- 5. APRENDERÁS -->
+      <section class="sec" id="aprenderas">
+        <div class="wrap">
+          <div class="center"><h2 style="margin-bottom: 32px">Además de las recetas, <em>aprenderás…</em></h2></div>
+          <ol class="steps">
+            <li class="card"><div><h3>Elegir tu receta</h3><p>Explora las ocho secciones y elige la conserva que quieres preparar.</p></div></li>
+            <li class="card"><div><h3>Separar lo que vas a usar</h3><p>Revisa las medidas y ten a mano ingredientes y utensilios antes de empezar.</p></div></li>
+            <li class="card"><div><h3>Preparar los ingredientes</h3><p>Sigue las indicaciones de limpieza y corte de cada preparación.</p></div></li>
+            <li class="card"><div><h3>Preparar y armar los frascos</h3><p>Sigue los pasos numerados, de la receta al frasco.</p></div></li>
+            <li class="card"><div><h3>Etiquetar y almacenar</h3><p>Identifica tus frascos y sigue los cuidados, plazos y condiciones de conservación.</p></div></li>
+            <li class="card"><div><h3>Combinar y servir</h3><p>Elige los acompañamientos y arma tu mesa con las sugerencias de las recetas y los bonos.</p></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- 6. BONOS -->
+      <section class="sec dark" id="bonos">
+        <div class="wrap">
+          <div class="center">
+            <p class="eyebrow">Para completar la mesa</p>
+            <h2 style="margin-bottom: 32px">Tu kit de conservas con <em>5 bonos</em></h2>
+          </div>
+          <div class="bonuses">
+            <article class="bonus">
+              <div class="cover cover--1" aria-hidden="true"><small>Bono 1</small>Gana Dinero con Conservas</div>
+              <div>
+                <p class="bonus__num">BONO 1</p>
+                <h3>Gana Dinero con Conservas</h3>
+                <p>Organiza los primeros pasos para vender tus conservas: cuánto cuesta cada frasco, cómo poner precio, dónde vender, mensajes listos para WhatsApp e Instagram y un plan de 30 días.</p>
+                <span class="bonus__tag">10 capítulos con tablas y modelos</span>
+                <div class="bonus__price"><s>US$ 17</s><span class="free">INCLUIDO GRATIS</span></div>
+              </div>
+            </article>
+            <article class="bonus">
+              <div class="cover cover--2" aria-hidden="true"><small>Bono 2</small>Salsas y Acompañamientos</div>
+              <div>
+                <p class="bonus__num">BONO 2</p>
+                <h3>Salsas y Acompañamientos</h3>
+                <p>Guacamole, hummus, tzatziki, huancaína, alioli, aderezos y crujientes caseros para servir con tus frascos.</p>
+                <span class="bonus__tag">15 recetas con foto y paso a paso</span>
+                <div class="bonus__price"><s>US$ 12</s><span class="free">INCLUIDO GRATIS</span></div>
+              </div>
+            </article>
+            <article class="bonus">
+              <div class="cover cover--3" aria-hidden="true"><small>Bono 3</small>Picadas en Casa</div>
+              <div>
+                <p class="bonus__num">BONO 3</p>
+                <h3>Picadas en Casa</h3>
+                <p>Tablas completas (criolla, mexicana, peruana, colombiana, navideña y más) con qué conservas usar, qué más lleva, cómo armarla y qué beber.</p>
+                <span class="bonus__tag">12 tablas para compartir</span>
+                <div class="bonus__price"><s>US$ 12</s><span class="free">INCLUIDO GRATIS</span></div>
+              </div>
+            </article>
+            <article class="bonus">
+              <div class="cover cover--4" aria-hidden="true"><small>Bono 4</small>Etiquetas Imprimibles</div>
+              <div>
+                <p class="bonus__num">BONO 4</p>
+                <h3>Etiquetas Imprimibles</h3>
+                <p>Una etiqueta lista para cada receta del libro, con fecha de elaboración y duración, más etiquetas en blanco y redondas para la tapa.</p>
+                <span class="bonus__tag">170 etiquetas + en blanco</span>
+                <div class="bonus__price"><s>US$ 9</s><span class="free">INCLUIDO GRATIS</span></div>
+              </div>
+            </article>
+            <article class="bonus">
+              <div class="cover cover--5" aria-hidden="true"><small>Bono 5</small>Tabla de Conservación</div>
+              <div>
+                <p class="bonus__num">BONO 5</p>
+                <h3>Tabla de Conservación</h3>
+                <p>El reposo y la duración en la nevera de las 170 recetas en una sola tabla, más las señales para saber cuándo descartar un frasco.</p>
+                <span class="bonus__tag">Las 170 recetas de un vistazo</span>
+                <div class="bonus__price"><s>US$ 7</s><span class="free">INCLUIDO GRATIS</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. QUIÉN CREÓ EL MATERIAL -->
+      <section class="sec" id="autora">
+        <div class="wrap">
+          <div class="card author">
+            <!-- DUEÑO/A: reemplaza "[Tu nombre]" por tu nombre y cambia este avatar por tu foto, por ejemplo:
+                 <img src="tu-foto.jpg" alt="Tu nombre" style="width:128px;height:128px;border-radius:50%;object-fit:cover;margin:0 auto 22px;border:3px solid #806329" /> -->
+            <div class="avatar" aria-hidden="true">TN</div>
+            <p class="eyebrow">Quién creó el material</p>
+            <h2>Conoce a <em>[Tu nombre]</em></h2>
+            <p class="author__sub">Recetas explicadas para que prepares tus conservas en casa</p>
+            <p>Reuní en este material 170 recetas de conservas con ingredientes, cantidades y preparación paso a paso para ayudarte a hacer tus propios frascos en casa. De los encurtidos a los chiles y los sabores agridulces, la idea es variar tu mesa y compartir lo que preparaste con amigos y familia.</p>
+            <div class="pills"><span>Paso a paso</span><span>Ingredientes y cantidades</span><span>Para hacer en casa</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. OFERTA -->
+      <section class="sec sand" id="oferta">
+        <div class="wrap">
+          <div class="center"><h2>Accede hoy a <em>tus 170 recetas</em></h2></div>
+          <div class="card offer">
+            <span class="ribbon">OFERTA ESPECIAL</span>
+            <img class="offer__img" src="hero-portada.webp" alt="El libro de 170 recetas en tablet y versión impresa" loading="lazy" />
+            <div class="cover-row" aria-hidden="true">
+              <div class="cover cover--1">Gana Dinero</div>
+              <div class="cover cover--2">Salsas</div>
+              <div class="cover cover--3">Picadas</div>
+              <div class="cover cover--4">Etiquetas</div>
+              <div class="cover cover--5">Tabla</div>
+            </div>
+            <ul class="checks">
+              <li><strong>170 recetas</strong> en ocho secciones · 353 páginas</li>
+              <li>Fotos, ingredientes, medidas y preparación paso a paso</li>
+              <li>PDF para imprimir o consultar en el celular</li>
+              <li class="b"><strong>BONO 1:</strong> Gana Dinero con Conservas</li>
+              <li class="b"><strong>BONO 2:</strong> Salsas y Acompañamientos</li>
+              <li class="b"><strong>BONO 3:</strong> Picadas en Casa</li>
+              <li class="b"><strong>BONO 4:</strong> Etiquetas Imprimibles</li>
+              <li class="b"><strong>BONO 5:</strong> Tabla de Conservación</li>
+              <li>Acceso de por vida</li>
+            </ul>
+            <p class="value">Valor total: <s>US$ 84</s></p>
+            <div class="price">
+              <p class="price__from">De <s>US$ 27</s> por solo</p>
+              <span class="price__big">US$ 7</span>
+              <span class="price__once">Pago único</span>
+            </div>
+            <!-- Botón de compra: el link se toma de la constante CHECKOUT_URL en el script al final -->
+            <a class="btn" id="buy" data-checkout href="#oferta" rel="noopener">Quiero el kit completo</a>
+            <div class="trust">
+              <span class="t1">7 días de garantía</span>
+              <span class="t2">Pago único</span>
+              <span class="t3">Acceso inmediato por e-mail</span>
+            </div>
+            <p class="secure">🔒 Pago seguro con tarjeta</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. GARANTÍA -->
+      <section class="sec" id="garantia">
+        <div class="wrap center">
+          <div class="seal" aria-hidden="true"><div><span><b>7</b>DÍAS</span></div></div>
+          <h2>7 días de <em>garantía</em></h2>
+          <p class="sub" style="margin-bottom: 0">Revisa el material. Si no es para ti, pide el reembolso dentro de los 7 días posteriores a la compra.</p>
+          <div class="mini">
+            <div class="card"><h3>Acceso de por vida</h3><p>Descarga los PDF y consúltalos cuando quieras.</p></div>
+            <div class="card"><h3>Atención sobre la compra</h3><p>Escríbenos a [tu e-mail de soporte].</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. PREGUNTAS FRECUENTES -->
+      <section class="sec sand" id="faq">
+        <div class="wrap">
+          <div class="center"><h2 style="margin-bottom: 32px">Preguntas <em>frecuentes</em></h2></div>
+          <div class="faq">
+            <details><summary>¿Las recetas muestran ingredientes y modo de preparación?</summary><p>Sí. El material trae ingredientes, cantidades, foto de cada receta, preparación paso a paso, indicaciones de almacenamiento y sugerencias para servir.</p></details>
+            <details><summary>¿Necesito experiencia para usar el libro?</summary><p>No. Puedes elegir una receta y revisar ingredientes, utensilios y etapas antes de empezar. Las fermentadas requieren más atención y el material explica cada cuidado.</p></details>
+            <details><summary>¿Puedo verlo en el celular o imprimirlo?</summary><p>Sí. La entrega es digital, en PDF. Puedes consultarlo en el celular, tablet o computadora e imprimir las páginas que quieras. No hay envío de libro físico.</p></details>
+            <details><summary>¿Cómo lo recibo y por cuánto tiempo tengo acceso?</summary><p>Después de confirmado el pago, recibirás el acceso en el e-mail que usaste en la compra. El acceso es de por vida.</p></details>
+            <details><summary>¿Y si no me gusta?</summary><p>Tienes 7 días después de la compra para revisar el material. Si no es para ti, solicita el reembolso dentro de ese plazo.</p></details>
+            <details><summary>¿En qué moneda pago?</summary><p>El precio es en dólares (US$) y tu banco hace la conversión a tu moneda local automáticamente.</p></details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p class="brand">ENCURTIDOS Y CONSERVAS CASERAS</p>
+      <p>[tu e-mail de soporte]</p>
+      <p>© 2026 · Todos los derechos reservados</p>
+      <p class="disc">Este sitio no forma parte de Facebook ni de Meta Platforms, Inc.</p>
+    </footer>
+
+    <div class="sticky" id="sticky" aria-hidden="true">
+      <a class="btn" href="#oferta" tabindex="-1">Quiero mis 170 recetas – US$ 7</a>
+    </div>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Vista ampliada de la receta">
+      <button class="lightbox__close" type="button" aria-label="Cerrar">×</button>
+      <div id="lightbox-body"></div>
+    </div>
+
+    <script>
+      /* ===== CONFIGURA AQUÍ TU LINK DE PAGO ===== */
+      const CHECKOUT_URL = "#oferta";
+      /* ========================================== */
+
+      document.querySelectorAll("[data-checkout]").forEach((a) => (a.href = CHECKOUT_URL));
+
+      // Sticky CTA after hero
+      const sticky = document.getElementById("sticky");
+      const hero = document.getElementById("inicio");
+      const offer = document.getElementById("oferta");
+      let pastHero = false, atOffer = false;
+      const update = () => {
+        const on = pastHero && !atOffer;
+        sticky.classList.toggle("show", on);
+        sticky.setAttribute("aria-hidden", on ? "false" : "true");
+        sticky.querySelector("a").tabIndex = on ? 0 : -1;
+      };
+      if ("IntersectionObserver" in window) {
+        new IntersectionObserver(([e]) => { pastHero = !e.isIntersecting && e.boundingClientRect.top < 0; update(); }).observe(hero);
+        if (offer) new IntersectionObserver(([e]) => { atOffer = e.isIntersecting; update(); }, { threshold: 0.15 }).observe(offer);
+      }
+
+      // Lightbox
+      const lb = document.getElementById("lightbox");
+      const lbBody = document.getElementById("lightbox-body");
+      const closeBtn = lb.querySelector(".lightbox__close");
+      let lastFocus = null;
+      const closeLb = () => { lb.classList.remove("open"); lbBody.innerHTML = ""; document.body.style.overflow = ""; if (lastFocus) lastFocus.focus(); };
+      document.querySelectorAll(".carousel .page-card").forEach((card) => {
+        card.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); card.click(); } });
+        card.addEventListener("click", () => {
+          lastFocus = card;
+          const clone = card.cloneNode(true);
+          clone.removeAttribute("aria-label");
+          clone.removeAttribute("role");
+          clone.removeAttribute("tabindex");
+          lbBody.innerHTML = "";
+          lbBody.appendChild(clone);
+          lb.classList.add("open");
+          document.body.style.overflow = "hidden";
+          closeBtn.focus();
+        });
+      });
+      closeBtn.addEventListener("click", closeLb);
+      lb.addEventListener("click", (e) => { if (e.target === lb) closeLb(); });
+      document.addEventListener("keydown", (e) => { if (e.key === "Escape" && lb.classList.contains("open")) closeLb(); });
+    </script>
+  </body>
+</html>
