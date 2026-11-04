@@ -13,13 +13,19 @@ n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0
 s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
 fbq('init','1004770436038737');
 fbq('track','PageView');
+var P=new URLSearchParams(location.search);
+var UP=P.get('up')==='1', FROM_UPSELL=P.get('src')==='upsell';
 try{
   var k='pp_purchase_'+(location.search||'x');
   if(!sessionStorage.getItem(k)){
-    fbq('track','Purchase',{value:7.00,currency:'USD',content_name:'170 Recetas de Encurtidos y Conservas Caseras',content_type:'product'});
+    if(UP){
+      fbq('track','Purchase',{value:12.00,currency:'USD',content_name:'Fermentados Caseros Avanzados',content_type:'product'});
+    }else if(!FROM_UPSELL){
+      fbq('track','Purchase',{value:7.00,currency:'USD',content_name:'170 Recetas de Encurtidos y Conservas Caseras',content_type:'product'});
+    }
     sessionStorage.setItem(k,'1');
   }
-}catch(e){fbq('track','Purchase',{value:7.00,currency:'USD'});}
+}catch(e){}
 </script>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1004770436038737&ev=Purchase&cd[value]=7&cd[currency]=USD&noscript=1"/></noscript>
 <style>
@@ -35,9 +41,10 @@ small{color:#777}
 <div class="card">
 <div class="big">🥒✅</div>
 <h1>¡Gracias por tu compra!</h1>
-<p>Tu pago fue aprobado. En unos minutos recibirás en tu correo el acceso a <b>170 Recetas de Encurtidos y Conservas Caseras</b> y tus 5 bonos.</p>
+<p>Tu pago fue aprobado. En unos minutos recibirás en tu correo el acceso a <b>170 Recetas de Encurtidos y Conservas Caseras</b> y tus 5 bonos<span id="upx"></span>.</p>
 <p>Revisa también la carpeta de <b>spam</b> o <b>promociones</b>.</p>
 <p><small>¿Dudas? Escríbenos a agilfreedomshop@gmail.com</small></p>
 </div>
+<script>if(new URLSearchParams(location.search).get('up')==='1')document.getElementById('upx').innerHTML=', además de <b>Fermentados Caseros Avanzados</b>';</script>
 </body>
 </html>
