@@ -14,20 +14,21 @@ s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebo
 fbq('init','1004770436038737');
 fbq('track','PageView');
 var P=new URLSearchParams(location.search);
-var UP=P.get('up')==='1', FROM_UPSELL=P.get('src')==='upsell';
+// Upsell activo: la compra principal (US$7) ya se cuenta en oferta-especial.html.
+// Aqui solo se dispara US$7 con ?main=1 (usar si se desactiva el upsell).
+var UP=P.get('up')==='1', MAIN=P.get('main')==='1';
 try{
   var k='pp_purchase_'+(location.search||'x');
   if(!sessionStorage.getItem(k)){
     if(UP){
       fbq('track','Purchase',{value:12.00,currency:'USD',content_name:'Fermentados Caseros Avanzados',content_type:'product'});
-    }else if(!FROM_UPSELL){
+    }else if(MAIN){
       fbq('track','Purchase',{value:7.00,currency:'USD',content_name:'170 Recetas de Encurtidos y Conservas Caseras',content_type:'product'});
     }
     sessionStorage.setItem(k,'1');
   }
 }catch(e){}
 </script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1004770436038737&ev=Purchase&cd[value]=7&cd[currency]=USD&noscript=1"/></noscript>
 <style>
 body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#f6f3ea;color:#2b2b2b;display:flex;min-height:100vh;align-items:center;justify-content:center;padding:24px;box-sizing:border-box}
 .card{max-width:520px;background:#fff;border-radius:18px;padding:32px 26px;box-shadow:0 8px 30px rgba(0,0,0,.08);text-align:center}
